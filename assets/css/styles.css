@@ -853,3 +853,136 @@ body[data-theme="dark"] .text-muted {
     max-width: inherit;
   }
 }
+
+
+.tagcloudactiveskills ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tagcloudactiveskills ul li {
+	display: inline-block;
+	margin: 0 0 .3em 1em;
+	padding: 0;
+}
+.tagcloudactiveskills ul li span {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 1em 0 .75em;
+	background-color: #3AAA64;
+	border-radius: 3px 3px 3px 3px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloudactiveskills ul li span::before {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	z-index: -1;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-color: #3498db;
+	border-radius: 50%;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloudactiveskills ul li span::after {
+	position: absolute;
+	top: 50%;
+	left: -6px;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-top: -3px;
+	border-radius: 100%;
+}
+.tagcloudactiveskills ul li span {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.tagcloudinactiveskills ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tagcloudinactiveskills ul li {
+	display: inline-block;
+	margin: 0 0 .3em 1em;
+	padding: 0;
+}
+.tagcloudinactiveskills ul li span {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 1em 0 .75em;
+	background-color: #DAE3E7;
+	border-radius: 3px 3px 3px 3px;
+	color: #778492;
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloudinactiveskills ul li span::before {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	z-index: -1;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-color: #DAE3E7;
+	border-radius: 50%;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloudinactiveskills ul li span::after {
+	position: absolute;
+	top: 50%;
+	left: -6px;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-top: -3px;
+	border-radius: 100%;
+}
+.tagcloudinactiveskills ul li span {
+	display: block;
+	max-width: 100px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.list-styled ul {
+  list-style: none;
+}
+
+.list-styled li::marker {
+  color: #3AAA64;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.content b
+{
+	color:#3AAA64;
+}
+
+.sectiontitle
+{
+	margin-right: 10px;
+}
