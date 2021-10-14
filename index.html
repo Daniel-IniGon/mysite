@@ -25,6 +25,31 @@
 </head> 
 
 <body>
+    <!-- ******NAVBAR****** --> 
+    <div class="navbar">
+        <section>
+            <div class="top-bar theme-bg-primary-darken">
+                <div class="container-fluid">
+			        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+			            <div class="collapse navbar-collapse text-uppercase" id="navigation">
+				            <ul class="navbar-nav ms-lg-auto">
+					            <li class="nav-item me-lg-3 heading"><a class="nav-link" href="#about">About me <span class="sr-only"></span></a></li>
+					            <li class="nav-item me-lg-3 heading"><a class="nav-link" href="#projects">Projects</a></li>
+					            <li class="nav-item me-lg-3 heading"><a class="nav-link" href="#gamejams">Gamejams</a></li>
+					            <li class="nav-item me-lg-3 heading"><a class="nav-link" href="#work">Work</a></li>
+					            <li class="nav-item me-lg-3 heading"><a class="nav-link" href="#experiences">Other Experiences</a></li>
+				            </ul>
+			            </div>
+		            </nav>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">     
@@ -36,7 +61,7 @@
 		                <h2 class="desc">Unity3d Developer</h2>   
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/daniel-iniesta-gonzalez/" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/Daniel-IniGon" target="_blank"><i class="fab fa-github-alt" title="GitHub" ></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://github.com/Daniel-IniGon" target="_blank"><i class="fab fa-github-alt" title="GitHub"></i></a></li>    
 		                    <li class="list-inline-item"><a href="https://daniel-inigon.github.io/CV/" target="_blank"><i class="fas fa-link" title="CV"></i></a></li>
 		                </ul> 
 		            </div><!--//profile-->
@@ -57,7 +82,7 @@
     <div class="container sections-wrapper py-5">
         <div class="row">
             <div class="primary col-lg-8 col-12">
-                <section class="about section">
+                <section class="about section" id="about">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -68,7 +93,7 @@
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
     
-               <section class="latest section">
+               <section class="latest section" id="projects">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
@@ -79,7 +104,8 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/" target="_blank">Orbitria's Tales - MoaMoai</a></h3>
-                                    <p class="mb-2">A game mix between a turn based RPG and a roguelite. Both your team and your enemies share the same energy to realize attacks and support abilities, so each turn it is a fight against each other and also for the resources.</p>
+                                    <p class="mb-2">A game mix between a turn based RPG and a roguelite.</p>
+                                    <p class="mb-2">Both your team and your enemies share the same energy to realize attacks and support abilities, so each turn it is a fight against each other and also for the resources.</p>
                                     <p><a class="more-link" href="https://moamoai.com/orbitrias-tales/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
@@ -97,6 +123,8 @@
                                     <p><a class="more-link" href="https://github.com/Daniel-IniGon/KanjiPracticeDemo" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
+                           
+                            <hr class="divider" />
                             
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://daniel-inigon.github.io/TFTWoWPets/" target="_blank">
@@ -109,16 +137,13 @@
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
-                            <hr class="divider" />
+                            <a class="btn btn-cta-secondary" href="https://github.com/Daniel-IniGon" target="_blank" title="GitHub">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
 
-                             <div class="item row">
-                                <p><a class="more-link" href="https://github.com/Daniel-IniGon" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more projects in my GitHub profile</a></p>
-                             </div><!--//item-->
                         </div><!--//content-->  
                     </div><!--//section-inner-->                
                 </section><!--//section-->
                 
-                <section class="projects section">
+                <section class="projects section" id="gamejams">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">GameJams</h2>
                         <div class="content">
@@ -128,41 +153,106 @@
                                 <p class="summary">I am very proud of my team and the work we did there!</p>
                                 <p><a class="more-link" href="https://globalgamejam.org/2021/games/pirateya-6" target="_blank"><i class="fas fa-external-link-alt"></i>See the project</a></p>
                             </div><!--//item-->
+
+                            <hr class="divider" />
+
                             <div class="item">
                                 <h3 class="title"><a href="https://globalgamejam.org/2020/games/human-again-9" target="_blank">Human again - GGJ 2020</a></h3>
                                 <p class="summary">This global game jam was so much fun for me. Although my mates were abroad participating in the Jam (some from Rome and others from Valencia), it was super smooth and dinamic. We all were already working together in other projects. so already knew how to share our ideas and thoughts.</p>
                                 <p class="summary">Yet simple but fun game! I loved it!</p>
                                 <p><a class="more-link" href="https://globalgamejam.org/2020/games/human-again-9" target="_blank"><i class="fas fa-external-link-alt"></i>See the project</a></p>
                             </div><!--//item-->
+                            
+                            <hr class="divider" />
+                            
                             <div class="item">
                                 <h3 class="title"><a href="https://v3.globalgamejam.org/2019/games/back-home-1" target="_blank">Back Home - GGJ 2019</a></h3>
                                 <p class="summary">This was the first Game Jam I've ever attend. Even I knew almost nothing about game development neither Unity game engine it was a really nice experience.</p>
                                 <p class="summary">The biggest challenge in this project was to organizate all 9 participants, since most of us met the same day of the event.</p>
                                 <p><a class="more-link" href="https://v3.globalgamejam.org/2019/games/back-home-1" target="_blank"><i class="fas fa-external-link-alt"></i>See the project</a></p>
                             </div><!--//item-->
-                            
-                            <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
-                            
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 
-                <section class="experience section">
+                <section class="experience section" id="work">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2020 - Present)</span></h3>
-                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2019 - 2020)</span></h3>
-                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                                <h3 class="title">Indie Video Game Developer - <span class="place"><a href="https://moamoai.com/orbitrias-tales/">MoaMoai</a></span><span class="year"> (January 2019 - Present)</span></h3>
+                                <p class="summary">Roguelike RPG indie video game developer.  Jack of all trades:</p>
+                                <ul class="list-unstyled">
+                                    <li>• Explorative and regression testing </li>
+                                    <li>• Tools programming</li>
+                                    <li>• Gameplay Programming</li>
+                                    <li>• VFX's</li>
+                                </ul>
                             </div><!--//item-->
                             
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2018 - 2019)</span></h3>
-                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                                <h3 class="title">Back-end web Developer - <span class="place"><a href="https://www.omada.es/es/">Òmada Interactiva</a></span><span class="year"> (July 2015 - January 2019)</span></h3>
+                                    <p class="summary">Specialized in development of custom CRM applications in Drupal 7 and 8, Wordpress and moodle sites as well.</p>
+                                    <ul class="list-unstyled">
+                                    <li>• QA of all the clients projects. Checking the correct functioning of the applications after applying proactive and reactive security updates. </li>
+                                    <li>• Onboard and training of new dev co-workers. Teach the tech workflow followed by the company.</li>
+                                    <li>• Project requirements taking. Making sure the client got what they need.</li>
+                                    <li>• Stakeholder management. Contacting with all the departments involved to achieve the correct resolution of the project.</li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Junior Programmer - <span class="place"><a href="https://www.conpas.net/">Conpas</a></span><span class="year"> (February 2015 - July 2015)</span></h3>
+                                    <p class="summary">Developed CRM systems in ZohoCRM and custom PHP systems.</p>
+                                    <ul class="list-unstyled">
+                                    <li>• QA work for the projects</li>
+                                    <li>• Research of new tools of ZohoCRM</li>
+                                    <li>• Stakeholder management</li>
+                                </ul>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Invesmark Specialist - <span class="place"><a href="https://www.tallerdepatronaje.com/">Taller de Patronaje</a></span><span class="year"> (April 2009 - January 2015)</span></h3>
+                                    <p class="summary">Digitalization of clothes patterns using the Invest suit.</p>
+                                    <ul class="list-unstyled">
+                                    <li>• Helpdesk</li>
+                                    <li>• Stakeholder management</li>
+                                    <li>• Administrative</li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section--> 
+
+                <section class="experience section" id="experiences">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Additional Experiences</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Boardgames QA Tester - <span class="place"><a href="https://qsystem.games/">Enigma Studio - QSystem</a></span><span class="year"> (January 2019)</span></h3>
+                                <ul class="list-unstyled">
+                                    <li>• Testing Serie Q Sherlock card games</li>
+                                    <li>• Provide feedback </li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Boardgames Tester - <span class="place"><a href="https://www.idealudica.com/">Idealúdica - Conocimiento en juego</a></span><span class="year"> (June 2018)</span></h3>
+                                    <ul class="list-unstyled">
+                                    <li>• Testing boardgames prototipes</li>
+                                    <li>• Propose improvements to managers</li>
+                                    <li>• Provide feedback</li>
+                                </ul>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Boardgames QA tester - <span class="place"><a href="#">Homoludicus</a></span><span class="year"> (January 2015)</span></h3>
+                                    <ul class="list-unstyled">
+                                    <li>• Testing boardgames to give feedback to managers</li>
+                                    <li>• Making sure the localization of the spanish editions were correct (Both rule books and boardgame components)</li>
+                                    <li>• Designed <a class="more-link" href="https://boardgamegeek.com/boardgame/136095/through-ages-spanish-promo-card-set" target="_blank" title="Through the ages spanish promo cards"></i> promotional cards</a> for the spanish edition of Through the Ages</li>
+                                </ul>
                             </div><!--//item-->
                             
                         </div><!--//content-->  
@@ -233,12 +323,8 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
-                                <h4 class="university">University College London <span class="year">(2017-2018)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2013-2017)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Ingen. Técnica en Informática de Gestión</h3>
+                                <h4 class="university">Universidad politécnica de Valencia (UPV) <span class="year">(2008-2014)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -250,12 +336,20 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                 </li><!--//item-->
                                 <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional Working Proficiency <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Catalan:</strong></span>
+                                    <span class="level">Limited Working Proficiency <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Japanese:</strong></span>
+                                    <span class="level">Elementary Proficiency <br class="visible-xs"/><i class="fas fa-star"></i></span>
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
