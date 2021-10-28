@@ -871,7 +871,7 @@ body[data-theme="dark"] .text-muted {
 	line-height: 30px;
 	padding: 0 1em 0 .75em;
 	background-color: #3AAA64;
-	border-radius: 3px 3px 3px 3px;
+	border-radius: 50px;
 	color: #fff;
 	font-size: 13px;
 	text-decoration: none;
@@ -925,7 +925,7 @@ body[data-theme="dark"] .text-muted {
 	line-height: 30px;
 	padding: 0 1em 0 .75em;
 	background-color: #DAE3E7;
-	border-radius: 3px 3px 3px 3px;
+	border-radius: 50px;
 	color: #778492;
 	font-size: 13px;
 	text-decoration: none;
