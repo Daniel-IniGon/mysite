@@ -986,3 +986,16 @@ body[data-theme="dark"] .text-muted {
 {
 	margin-right: 10px;
 }
+
+.staticImage {
+	position:fixed;
+}
+
+.staticImage:hover {
+  opacity:0;
+}
+
+.activeGif
+{
+	
+}
