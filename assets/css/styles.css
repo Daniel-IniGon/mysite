@@ -9,7 +9,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  background: #cde5d1;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,22 +76,22 @@ a.btn-cta-primary, .btn-cta-primary {
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #49ac43;
-  border: 1px solid #54ba4e;
+  background: #cde5d1;
+  border: 1px solid #dbe9db;
   color: #fff;
 }
 
 a.btn-cta-secondary, .btn-cta-secondary {
   background: #3AAA64;
-  border: 1px solid #479FC8;
+  border: 1px solid #54ba4e;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
-  background: #49ac43;
-  border: 1px solid #49ac43;
+  background: #cde5d1;
+  border: 1px solid #dbe9db;
   color: #fff;
   box-shadow: none;
 }
@@ -243,11 +243,11 @@ a.dotted-link:hover {
 }
 
 .latest .item .title a {
-  color: #778492;
+  color: #3AAA64;
 }
 
 .latest .item .title a:hover {
-  color: #5f6b77;
+  //color: #5f6b77;
 }
 
 .latest .item .project-image:hover {
@@ -351,11 +351,11 @@ a.dotted-link:hover {
 }
 
 .projects .item .title a {
-  color: #778492;
+  color: #3AAA64;
 }
 
 .projects .item .title a:hover {
-  color: #5f6b77;
+  //color: #5f6b77;
 }
 
 /* Work Section */
@@ -749,11 +749,12 @@ body[data-theme="dark"] .testimonials .item .quote {
 }
 
 body[data-theme="dark"] .latest .item .title a, body[data-theme="dark"] .projects .item .title a, body[data-theme="dark"] .blog .item .title a {
-  color: rgba(255, 255, 255, 0.9);
+  //color: rgba(255, 255, 255, 0.9);
+  color: #3AAA64;
 }
 
 body[data-theme="dark"] .latest .item .title a:hover, body[data-theme="dark"] .projects .item .title a:hover, body[data-theme="dark"] .blog .item .title a:hover {
-  color: #fff;
+ 
 }
 
 body[data-theme="dark"] .testimonials .item .source .name {
@@ -1017,4 +1018,43 @@ body[data-theme="dark"] .navbar {
 .py-5
 {
 	padding-top: 0px!important;
+}
+
+.navbar-dark .navbar-toggler
+{
+	background-color: #3AAA64!important;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: white;
+  border: 1px solid #54ba4e;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+  line-height: 400px;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
 }
