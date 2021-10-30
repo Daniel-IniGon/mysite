@@ -92,9 +92,9 @@
         <div class="section-inner shadow-sm rounded">
             <h2 class="heading">About Me</h2>
             <div class="content">
-                <p>My name is Daniel Iniesta González and I am currently making a career switch from web development into the video game industry. Started my IT career as a web developer, mainly bulding web apps in Drupal, Moodle and Wordpress.</p>
+                <p>My name is Daniel Iniesta González and I am currently making a career switch from web development into the video game industry. I have been learning in a <strong>self-taught</strong> way Video Game Development since my first <strong>Global Game Jam</strong> back in 2019. I Love to participate in this events to meet new people and work with them as a team. <strong>Always willing to help</strong> whoever could need my aid.</p>
                 <p>From my childhood one of my fondest memories was playing video games or board games with my brothers. When my older brother introduced me to Warcraft 2 and I saw orcs units walking it blew my mind, he then explained that it was the work of a programmer, and I knew immediately that I would end up working creating video games.</p>
-                <p>I have been learning Video Game Development since my first Global Game Jam back in 2019. I am currently collaborating in the development of the game Orbitira's Tales (Moamoai indie studio first title).</p>
+                <p>I use <strong>Unity3d and C#</strong> to develope games, but I have been using other languages and technologies in my profressional career as <strong>PHP, MySQL, CSS</strong>, etc. I am used to work with <strong>Git</strong> to keep the track of my projects. Also enjoy creating <strong>shaders</strong> using <strong>HLSL</strong> and the node based tool <strong>Shader Graph</strong>. I am currently collaborating in the development of the game Orbitria's Tales (Moamoai indie studio first title).</p>
                 <p>Now it is time for a career switch. <b>Let's make Video Games!</b></p>
             </div><!--//content-->
         </div><!--//section-inner-->                 
@@ -112,7 +112,10 @@
                             
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://daniel-inigon.github.io/TFTWoWPets/" target="_blank" title="KanjiPractice">
-                                    <img id="imgAnimateKanji" class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KanjiPractice-play.png" alt="KanjiPractice" title="KanjiPractice"/>
+                                    <img class="img-fluid project-image rounded shadow-sm animateGif" 
+                                        src="assets/images/projects/KanjiPractice-play.png" alt="KanjiPractice" title="KanjiPractice" 
+                                        srcStatic="assets/images/projects/KanjiPractice-play.png" 
+                                        srcDynamic="assets/images/projects/KanjiPractice.gif"/>
                                 </a>
 
                                 <div class="desc col-md-8 col-12">
@@ -127,7 +130,10 @@
 
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://daniel-inigon.github.io/TFTWoWPets/" target="_blank" title="WoWFTF">
-                                    <img id="imgAnimateWoWTFT" class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/WoWTFT-play.png" alt="WoWFTF" title="WoWFTF"/>
+                                    <img class="img-fluid project-image rounded shadow-sm animateGif" 
+                                        src="assets/images/projects/WoWTFT-play.png" alt="WoWFTF" title="WoWFTF" 
+                                        srcStatic="assets/images/projects/WoWTFT-play.png" 
+                                        srcDynamic="assets/images/projects/WoWTFT.gif"/>
                                 </a>
 
                                 <div class="desc col-md-8 col-12">
@@ -147,6 +153,7 @@
                                     <h3 class="title"><a href="https://moamoai.com/orbitrias-tales/" target="_blank" title="Orbitria's Tales" >Orbitria's Tales - MoaMoai</a></h3>
                                     <p class="mb-2">A mixed game between a turn based RPG and a roguelite.</p>
                                     <p class="mb-2">Both your team and your enemies share the same energy to realize attacks and support abilities, so each turn it is a fight against each other and also for the resources.</p>
+                                    <p class="mb-2">Worked on many topics. Refactor of the abilities system. Built a tool to autogenerate a custom mesh on runtime to visualize the procedurally generated dungeon on a minimap.</p>
                                     <p><a class="more-link" href="https://moamoai.com/orbitrias-tales/" target="_blank" title="Orbitria's Tales"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
@@ -524,28 +531,16 @@
 
     <script>
         $(document).ready(function() {
-            $("#imgAnimateWoWTFT").hover(
+            $(".animateGif").hover(
                 function()
                 {
-                    console.log('Hover Enter'); 
-                    $(this).attr("src", "assets/images/projects/WoWTFT.gif");
+                    if($(this).attr("srcDynamic").length)
+                        $(this).attr("src", $(this).attr("srcDynamic"));
                 },
                 function()
                 {
-                    console.log('Hover Exit'); 
-                    $(this).attr("src", "assets/images/projects/WoWTFT-play.png");
-                });
-                
-                $("#imgAnimateKanji").hover(
-                function()
-                {
-                    console.log('Hover Enter'); 
-                    $(this).attr("src", "assets/images/projects/KanjiPractice.gif");
-                },
-                function()
-                {
-                    console.log('Hover Exit'); 
-                    $(this).attr("src", "assets/images/projects/KanjiPractice-play.png");
+                    if($(this).attr("srcStatic").length)
+                        $(this).attr("src", $(this).attr("srcStatic"));
                 });
         });
 
