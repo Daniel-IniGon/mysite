@@ -841,6 +841,11 @@ body[data-theme="dark"] .navbar {
   border-top-color: #1e2124;
 }
 
+body[data-theme="dark"] .flex-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
 @media (max-width: 767.98px) {
   .header {
     text-align: center;
@@ -1046,15 +1051,12 @@ body[data-theme="dark"] .navbar {
 }
 
 .flex-item {
-  background: white;
-  border: 1px solid #54ba4e;
-  padding: 5px;
+  padding: 15px;
   width: 400px;
-  height: 400px;
-  margin-top: 10px;
-  line-height: 400px;
-  color: black;
+  height: 300px;
+  margin-bottom: 20px;
+  color: #545e69;
   font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+  font-size: 1.2em;
+  text-align: left;
 }
