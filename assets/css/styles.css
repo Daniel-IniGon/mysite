@@ -845,6 +845,10 @@ body[data-theme="dark"] .flex-item {
   color: rgba(255, 255, 255, 0.9);
 }
 
+body[data-theme="dark"] strong {
+  color: rgba(255, 255, 255, 1);
+}
+
 
 @media (max-width: 767.98px) {
   .header {
@@ -1059,4 +1063,36 @@ body[data-theme="dark"] .flex-item {
   font-weight: bold;
   font-size: 1.2em;
   text-align: left;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3AAA64;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  //background-color: #555;
 }
