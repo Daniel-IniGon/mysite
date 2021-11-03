@@ -9,7 +9,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #cde5d1;
+  background: #dfe9e1;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,7 +76,7 @@ a.btn-cta-primary, .btn-cta-primary {
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #cde5d1;
+  background: #dfe9e1;
   border: 1px solid #dbe9db;
   color: #fff;
 }
@@ -90,7 +90,7 @@ a.btn-cta-secondary, .btn-cta-secondary {
 }
 
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
-  background: #cde5d1;
+  background: #dfe9e1;
   border: 1px solid #dbe9db;
   color: #fff;
   box-shadow: none;
