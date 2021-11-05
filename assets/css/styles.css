@@ -1096,3 +1096,21 @@ body[data-theme="dark"] strong {
 .active, .collapsible:hover {
   //background-color: #555;
 }
+
+li::marker {
+  color: #3AAA64;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.resume-list > li.resume-achieve {
+  list-style: "\2605\0020";
+
+}
+
+ul.resume-list > li {
+  list-style: "\2022\0020\0020";
+
+}
