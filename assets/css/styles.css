@@ -89,6 +89,12 @@ a.btn-cta-secondary, .btn-cta-secondary {
   text-transform: uppercase;
 }
 
+a.btn-flow-root{
+	display: flow-root;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
   background: #dfe9e1;
   border: 1px solid #dbe9db;
@@ -863,7 +869,8 @@ body[data-theme="dark"] strong {
     text-align: center;
   }
   .header .btn {
-    margin-top: 30px;
+    margin-top: 15px;
+	margin-bottom: 15px;
     float: none !important;
   }
   .project-image {
@@ -1114,3 +1121,18 @@ ul.resume-list > li {
   list-style: "\2022\0020\0020";
 
 }
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}
