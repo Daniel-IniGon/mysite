@@ -91,8 +91,8 @@ a.btn-cta-secondary, .btn-cta-secondary {
 
 a.btn-flow-root{
 	display: flow-root;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
@@ -874,7 +874,7 @@ body[data-theme="dark"] strong {
     float: none !important;
   }
   .project-image {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 }
 
